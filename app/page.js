@@ -1,11 +1,12 @@
-import Image from 'next/image';
+import Link from 'next/link';
+import Header from './components/header';
 
 export default function Home() {
   return (
     <main>
-      <Image src="/logo.png" alt="A server surrounded by magic sparkles." width={500} height={500} />
-      <h1>Welcome to my page!</h1>
+      <Header/>
       <p>🔥 Let&apos;s get started! 🔥</p>
+      <p><Link href="/about">About Us</Link></p>
     </main>
   );
 }
